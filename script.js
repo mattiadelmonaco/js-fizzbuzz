@@ -19,7 +19,7 @@ STEPS:
     - per sapere se è multiplo devo indicare che il resto (modulo - %) del numero deve essere uguale a 0
 3. ALTRIMENTI SE il numero è un multiplo di 5 devo stampare "Buzz" - EDIT: else if (i % 5 === 0) {console.log ("Buzz")}
     - per sapere se è multiplo devo indicare che il resto (modulo - %) del numero deve essere uguale a 0
-4. ALTRIMENTI SE il numero è multiplo sia di 3 che di 5 devo stampare "FizzBuzz"
+4. ALTRIMENTI SE il numero è multiplo sia di 3 che di 5 devo stampare "FizzBuzz" - EDIT: } else if (i % 3 === 0 && i % 5 === 0) {console.log ("FizzBuzz")}
     - per sapere se è multiplo di entrambi devo usare l'operatore logico AND (&&) così da indicare che entrambi i casi 
     devono verificarsi per stampare "FizzBuzz" in console (deve verificarsi resto 0 a multiplo di 3 e anche a multiplo di 5)
 5. ALTRIMENTI se non si verifica nessuna delle precedenti condizioni stampo direttamente il numero in console
@@ -32,5 +32,7 @@ for(let i = 1; i <= 100; i++ ) {
         console.log ("Fizz")
     } else if (i % 5 === 0) {
         console.log ("Buzz")
+    } else if (i % 3 === 0 && i % 5 === 0) {
+        console.log ("FizzBuzz")
     }
 }

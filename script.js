@@ -17,7 +17,7 @@ STEPS:
 1. Creo un contatore che va da 1 fino a 100 - EDIT: for(let i = 1; i <= 100; i++ ) { }
 2. SE il numero è un multiplo di 3 devo stampare "Fizz" - EDIT: if (i % 3 === 0) {console.log ("Fizz")}
     - per sapere se è multiplo devo indicare che il resto (modulo - %) del numero deve essere uguale a 0
-3. ALTRIMENTI SE il numero è un multiplo di 5 devo stampare "Buzz"
+3. ALTRIMENTI SE il numero è un multiplo di 5 devo stampare "Buzz" - EDIT: else if (i % 5 === 0) {console.log ("Buzz")}
     - per sapere se è multiplo devo indicare che il resto (modulo - %) del numero deve essere uguale a 0
 4. ALTRIMENTI SE il numero è multiplo sia di 3 che di 5 devo stampare "FizzBuzz"
     - per sapere se è multiplo di entrambi devo usare l'operatore logico AND (&&) così da indicare che entrambi i casi 
@@ -30,5 +30,7 @@ STEPS:
 for(let i = 1; i <= 100; i++ ) {
     if (i % 3 === 0) {
         console.log ("Fizz")
+    } else if (i % 5 === 0) {
+        console.log ("Buzz")
     }
 }

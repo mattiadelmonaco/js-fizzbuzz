@@ -14,7 +14,7 @@ Consigli del giorno:
 
 STEPS: 
 
-1. Creo un contatore che va da 1 fino a 100
+1. Creo un contatore che va da 1 fino a 100 EDIT: for(let i = 1; i <= 100; i++ ) { }
 2. SE il numero è un multiplo di 3 devo stampare "Fizz"
     - per sapere se è multiplo devo indicare che il resto (modulo - %) del numero deve essere uguale a 0
 3. ALTRIMENTI SE il numero è un multiplo di 5 devo stampare "Buzz"
@@ -24,3 +24,9 @@ STEPS:
     devono verificarsi per stampare "FizzBuzz" in console (deve verificarsi resto 0 a multiplo di 3 e anche a multiplo di 5)
 5. ALTRIMENTI se non si verifica nessuna delle precedenti condizioni stampo direttamente il numero in console
 */
+
+// CODES:
+    
+for(let i = 1; i <= 100; i++ ) {
+    
+}

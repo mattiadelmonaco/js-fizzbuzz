@@ -19,6 +19,7 @@ EDIT: for(let i = 1; i <= 100; i++ ) { }
 2. SE il numero è un multiplo di 3 devo stampare "Fizz"
     - per sapere se è multiplo devo indicare che il resto (modulo - %) del numero deve essere uguale a 0
 EDIT: if (i % 3 === 0) {console.log ("Fizz")}
+FIX: seconda condizione per avere multiplo di 3 e di 5 come prima - else if anzichè if
 3. ALTRIMENTI SE il numero è un multiplo di 5 devo stampare "Buzz"
     - per sapere se è multiplo devo indicare che il resto (modulo - %) del numero deve essere uguale a 0
 EDIT: } else if (i % 5 === 0) {console.log ("Buzz")}
@@ -26,19 +27,20 @@ EDIT: } else if (i % 5 === 0) {console.log ("Buzz")}
     - per sapere se è multiplo di entrambi devo usare l'operatore logico AND (&&) così da indicare che entrambi i casi 
     devono verificarsi per stampare "FizzBuzz" in console (deve verificarsi resto 0 a multiplo di 3 e anche a multiplo di 5)
 EDIT: } else if (i % 3 === 0 && i % 5 === 0) {console.log ("FizzBuzz")}
+FIX: prima condizione altrimenti "vincerebbero" le altre - if anzichè else if
 5. ALTRIMENTI se non si verifica nessuna delle precedenti condizioni stampo direttamente il numero in console
 EDIT: } else {console.log (i)}
 */
 
 // CODES:
     
-for(let i = 1; i <= 100; i++ ) {
-    if (i % 3 === 0) {
+for (let i = 1; i <= 100; i++ ) {
+    if (i % 3 === 0 && i % 5 === 0) {
+        console.log ("FizzBuzz")
+    } else if (i % 3 === 0) {
         console.log ("Fizz")
     } else if (i % 5 === 0) {
         console.log ("Buzz")
-    } else if (i % 3 === 0 && i % 5 === 0) {
-        console.log ("FizzBuzz")
     } else {
         console.log (i)
     }
